@@ -1,3 +1,6 @@
+3) convert specifications in the image to js object
+
+
 var dimensions = {Overall_length : 3500, Overall_width : 1600, Overall_height: 1490, Wheelbase : 2360, Track_width : {Front : 1405, Rear : 1400}, Minimum_turning_radius : 4.5, Minimum_ground_clearance : 170}
 console.log(dimensions)
 console.log(dimensions.Overall_length)
