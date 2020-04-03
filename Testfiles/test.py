@@ -1,2 +1,4 @@
 names = ["sakthi", "suresh", "malu"]
-print(names[0], names[1])
+
+for name in names:
+    print name
