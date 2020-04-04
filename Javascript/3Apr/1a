@@ -1,0 +1,53 @@
+/*mage URL for 1a, 1b, 1c, 1d, 1e :https://drive.google.com/file/d/1h5dv4otA6aTQtekkjGbKuv7SLyZkzjGG/view?usp=sharing
+
+1a. Update the count of Person 2 inside readers Array in Javascript;
+
+1b. Insert a new key called email and assign a value email1@gmail.com and email2@gmail.com respectively in both authorDetails object;
+
+1c.  Insert a new reader in the readers array for Nodejs.
+
+1d. Create a New Object in the library for a new Book called SQL.
+
+1e. Find the datatype of author age in Nodejs Object.	*/
+
+
+
+var library = [
+{
+	title :  "javascript", 
+	price : 500, 
+	readers : [
+		{
+			name : "person 1", 
+			count : 300
+		}, 
+		{
+			name : "person 2", 
+			count : 400
+		}
+	], 
+	authorDetails : {
+			name : "Raj", 
+			age : 40
+	}
+    }, 
+    {
+	title : "nodejs", 
+	price : 600, 
+	readers : [], 
+	authorDetails : {
+		name : "Raj", 
+		age : 40
+	}
+    }
+]
+
+
+
+library[0].authorDetails["email"] = "email1@gmail.com"
+library[1].authorDetails["email"] = "email2@gmail.com"
+library[1].readers = {n1 : 'sakthi', n2 : 'suresh'}
+library[2] = {title : "SQL", price : 1000, readers : {name1 : "thenmozhe", name2 : 'nirmala', name3 : 'ramesh'}, authorDetails : {name : "Saki", age : 26}} 
+console.log(library[0].readers[1].count)
+console.log(typeof(library[1].authorDetails.age))
+console.log(library)
