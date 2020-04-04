@@ -43,11 +43,21 @@ var library = [
 ]
 
 
+// For 1a:
+console.log(library[0].readers[1].count)
 
+// For 1b:
 library[0].authorDetails["email"] = "email1@gmail.com"
 library[1].authorDetails["email"] = "email2@gmail.com"
+
+//For 1c:
 library[1].readers = {n1 : 'sakthi', n2 : 'suresh'}
+
+//For 1d:
 library[2] = {title : "SQL", price : 1000, readers : {name1 : "thenmozhe", name2 : 'nirmala', name3 : 'ramesh'}, authorDetails : {name : "Saki", age : 26}} 
-console.log(library[0].readers[1].count)
+
+//For 1e:
 console.log(typeof(library[1].authorDetails.age))
+
+//Final result
 console.log(library)
