@@ -1,0 +1,30 @@
+/*
+4. Write a program to create a calculator with all arithmetic operations has functions;*/
+
+
+function add_func(x, y) {
+	return x + y
+}
+
+function sub_func(x, y) {
+	return x - y
+}
+
+function mul_func(x, y) {
+	return x * y
+}
+
+function mod_func(x, y) {
+	return x%y
+}
+
+function div_func(x, y) {
+	return x/y
+}
+
+function div_func1(x, y) {
+	return x // y
+}
+
+
+console.log(add_func(2, 7))
