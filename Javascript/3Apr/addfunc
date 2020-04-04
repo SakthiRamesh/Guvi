@@ -1,0 +1,8 @@
+/*. Write a function which will get two parameters and return a sum of it.
+*/
+
+function add_func(x, y) {
+	return x + y
+}
+
+console.log(add_func(2, 7))
