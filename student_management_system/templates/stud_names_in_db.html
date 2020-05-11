@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}th, td {
+  padding: 15px;
+}
+</style>
+    <meta charset="UTF-8">
+    <title>student-detail-view</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Student_name</th>
+        <th>Roll_number</th>
+    </tr>
+    {% for student_roll in students %}
+    <tr>
+        <td>{{ student_roll[0] }}</td>
+        <td><a href='/student_marks/{{ student_roll[1] }}'>{{ student_roll[1] }}</a></td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
