@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}th, td {
+  padding: 15px;
+}
+</style>
+<title>Student detail</title></head>
+<body>
+<table>
+    <tr>
+        <th>Student Name</th>
+        <th>Roll Number</th>
+        <th>Standard</th>
+        <th>Tamil</th>
+        <th>English</th>
+        <th>Maths</th>
+        <th>Science</th>
+        <th>Social</th>
+        <th>Total Marks</th>
+        <th>Average</th>
+    </tr>
+
+    <tr>
+        <td>{{ content["student_name"]  }}</td>
+        <td>{{ content["roll_number"] }}</td>
+        <td>{{ content["standard"] }}</td>
+        <td>{{ content["tamil"] }}</td>
+        <td>{{ content["english"] }}</td>
+        <td>{{ content["maths"] }}</td>
+        <td>{{ content["science"]}}</td>
+        <td>{{ content["social"]}}</td>
+        <td>{{total_marks}}</td>
+        <td>{{avg_marks}}</td>
+    </tr>
+
+</table>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}th, td {
+  padding: 15px;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Student-marks</title>
+</head>
+<body>
+
+<table>
+
+
+    <tr>
+        <th>Tamil</th>
+        {% if student_mark[0] < 35 %}
+        <td style="color:red">{{ student_mark[0] }}</td>
+        {% else %}
+        <td style="color:green">{{ student_mark[0] }}</td>
+        {% endif %}
+    </tr>
+    <tr>
+        <th>English</th>
+         {% if student_mark[1] < 35 %}
+        <td style="color:red">{{ student_mark[1] }}</td>
+        {% else %}
+        <td style="color:green">{{ student_mark[1] }}</td>
+        {% endif %}
+    </tr>
+    <tr>
+        <th>Maths</th>
+         {% if student_mark[2] < 35 %}
+        <td style="color:red">{{ student_mark[2] }}</td>
+        {% else %}
+        <td style="color:green">{{ student_mark[2] }}</td>
+        {% endif %}
+    </tr>
+    <tr>
+        <th>Science</th>
+         {% if student_mark[3] < 35 %}
+        <td style="color:red">{{ student_mark[3] }}</td>
+        {% else %}
+        <td style="color:green">{{ student_mark[3] }}</td>
+        {% endif %}
+    </tr>
+    <tr>
+        <th>Social</th>
+         {% if student_mark[4] < 35 %}
+        <td style="color:red">{{ student_mark[4] }}</td>
+        {% else %}
+        <td style="color:green">{{ student_mark[4] }}</td>
+        {% endif %}
+    </tr>
+
+    <tr>
+        <th>Total</th>
+        <td>{{total_of_marks}}</td>
+    </tr>
+    <tr>
+        <th>Average</th>
+        <td>{{average_of_marks}}</td>
+    </tr>
+
+    <tr>
+        <th>Result</th>
+        {% if student_result == "pass"%}
+        <td style="color:green">{{student_result}}</td>
+        {% else %}
+        <td style="color:red">{{student_result}}</td>
+        {% endif %}
+
+    </tr>
+
+
+
+
+</table>
+
+</body>
+</html>
